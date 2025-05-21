@@ -1,0 +1,120 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f8f9fa, #e0e0f0);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-dark {
+  background: linear-gradient(45deg, #4b0082, #9932CC);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #9e1b32;
+}
+
+.btn-success {
+  background: linear-gradient(to right, #6a0dad, #8e2de2);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-success:hover {
+  background: linear-gradient(to right, #8e2de2, #6a0dad);
+  transform: scale(1.05);
+}
+
+form#booking-form {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 1rem;
+  box-shadow: 0 12px 24px rgba(107,0,180,0.2);
+  animation: fadeInUp 1s ease-out;
+}
+
+form#booking-form .input-box {
+  margin-bottom: 20px;
+}
+
+form#booking-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+form#booking-form input:focus {
+  border-color: #6a0dad;
+  outline: none;
+}
+
+form#booking-form .btn {
+  background: linear-gradient(to right, #6a0dad, #8e2de2);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form#booking-form .btn:hover {
+  background: linear-gradient(to right, #8e2de2, #6a0dad);
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-section h2 {
+  font-weight: bold;
+  color: #4b0082;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+#cart-summary h4 {
+  color: #4b0082;
+}
